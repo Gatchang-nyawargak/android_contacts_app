@@ -22,7 +22,7 @@ RecyclerView.Adapter<ContactsViewHolder>(){
          var contact = contactsList[position]
         holder.tvName.text = contact.name
         holder.tvPhoneNumber.text = contact.phonNember
-        holder.tvName.text= contact.email
+        holder.tvEmail.text= contact.email
     }
 
 
