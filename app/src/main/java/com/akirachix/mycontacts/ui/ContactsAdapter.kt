@@ -1,11 +1,9 @@
-package com.akirachix.mycontacts
+package com.akirachix.mycontacts.ui
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.akirachix.mycontacts.databinding.ContactListItemBinding
-import com.google.android.material.card.MaterialCardView
+import com.akirachix.mycontacts.model.Contact
 
 class ContactsAdapter(val contactsList:List<Contact>):
 RecyclerView.Adapter<ContactsViewHolder>(){
