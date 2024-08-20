@@ -19,7 +19,7 @@ RecyclerView.Adapter<ContactsViewHolder>(){
     override fun onBindViewHolder(holder: ContactsViewHolder, position: Int) {
          var contact = contactsList[position]
         holder.binding.tvName.text = contact.name
-        holder.binding.tvPhoneNumber.text = contact.phonNember
+        holder.binding.tvPhoneNumber.text = contact.phoneNumber
         holder.binding.tvEmail.text= contact.email
     }
 
