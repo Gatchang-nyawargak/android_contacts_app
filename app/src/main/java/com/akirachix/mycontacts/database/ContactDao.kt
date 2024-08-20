@@ -17,7 +17,7 @@ import com.akirachix.mycontacts.model.Contact
      @Query ("SELECT * FROM Contacts")
      fun getAllContacts(): LiveData<List<Contact>>
 
-     @Query ("SELECT @ FROM Contacts WHERE contactId=:contactId")
+     @Query ("SELECT * FROM Contacts WHERE contactId=:contactId")
      fun getContactById(contactId: Int): LiveData<Contact>
 
      @Update
