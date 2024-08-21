@@ -29,10 +29,11 @@ class MainActivity : AppCompatActivity() {
         contactsViewModel.getAllContacts().observe(this){contactList->
             displayContacts(contactList)
         }
+
     }
    fun displayContacts(contactList: List<Contact>){
 
-       val contactsAdapter = ContactsAdapter(contactList)
+       val contactsAdapter = ContactsAdapter(contactList, this)
        binding.rvContacts.adapter = contactsAdapter
    }
 }
