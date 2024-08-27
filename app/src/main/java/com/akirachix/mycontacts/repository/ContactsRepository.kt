@@ -20,4 +20,7 @@ class ContactsRepository {
     fun getAllContacts():LiveData<List<Contact>>{
         return database.getContactDao().getAllContacts()
     }
+    fun getContactById(contactId:Int):LiveData<Contact>{
+        return database.getContactDao().getContactById(contactId)
+    }
 }
